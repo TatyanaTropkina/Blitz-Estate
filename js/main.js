@@ -1,12 +1,38 @@
 $(function () {
+	$('.quiz__slider').slick({
+		prevArrow: false,
+		fade: true,
+		nextArrow: '<button class="quiz__slider-btn">Продолжить</button>',
+    });
+	$('.apart__items-extra').hide();
+	
+$('.apart__inner-btn').on('click', function(){
+	$('.apart__items-extra').show();
+	$(this).hide();
+	 $('.apart__gallery-extra').slick({
+	fade: true,
+	arrows: false,
+});
+});
+
+$('.apart__gallery-extra').on('click', function () {
+	$(this).slick('slickNext');
+});
+$('.apart__btn').on('click', function(){
+	$('.apart__items-extra').hide();
+	$('.apart__inner-btn').show();
+
+});
+	$('.apart__gallery').on('click', function () {
+        $(this).slick('slickNext');
+    });
+
     $('.apart__gallery').slick({
         fade: true,
         arrows: false,
+
     });
-	$('.quiz__slider').slick({
-		prevArrow: false,
-		nextArrow: '<button class="quiz__slider-btn">Продолжить</button>',
-    });
+	
 	
 	var mixer = mixitup('.apart__items', {
 		load: {
@@ -20,19 +46,7 @@ $(function () {
 		}
 		
 	});
-    $('.apart__gallery').on('click', function () {
-        $(this).slick('slickNext');
-    });
-$('.apart__items-more').hide();
-$('.apart__inner-btn').on('click', function(){
-	$('.apart__items-more').show();
-	$(this).hide();
-});
-$('.apart__btn').on('click', function(){
-	$('.apart__items-more').hide();
-	$('.apart__inner-btn').show();
-
-})
+    
     $('.about__gallery-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -46,6 +60,20 @@ $('.apart__btn').on('click', function(){
         arrows: false,
         focusOnSelect: true,
         asNavFor: '.about__gallery-slider',
+		responsive: [
+			{
+			breakpoint: 901,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 769,
+			settings: {
+				slidesToShow: 4,
+			}
+		}
+	]
 
     });
     $('.features__item').on('click', function () {
@@ -57,14 +85,19 @@ $('.apart__btn').on('click', function(){
         $('.features__item').removeClass('active')
 
     });
-
+// $('.header__menu-contacts').hide()
     $('.menu__btn').on('click', function () {
         $('.menu').toggleClass('active');
+		        $('.menu__list').toggleClass('active');
+				// $('.header__menu-contacts').show();
+
         $('.menu__btn').toggleClass('active');
         $('.header').toggleClass('gradient');
     })
     $('.menu__list-link').on('click', function () {
         $('.menu').removeClass('active');
+		        $('.menu__list').removeClass('active');
+
         $('.menu__btn').removeClass('active');
     });
 
