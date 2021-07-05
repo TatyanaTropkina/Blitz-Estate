@@ -87,6 +87,8 @@ $('.apart__btn').on('click', function(){
         $('.menu').removeClass('active');
 		$('.menu__list').removeClass('active');
         $('.menu__btn').removeClass('active');
+		$('.header').removeClass('gradient');
+
     });
 
     let btnCategories = $(".menu__btn");
