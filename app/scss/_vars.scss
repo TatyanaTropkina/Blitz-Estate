@@ -1,0 +1,52 @@
+$colorAccent: #2A94E2;
+$colorGrey: #f6f6f6;
+$gradient:linear-gradient(180deg, rgba(83, 88, 96, 0) 26.23%, rgba(37, 44, 56, 0.56) 52.73%, #252C38 100%);
+
+
+%content {
+	position: absolute;
+	content: '';
+}
+
+%O {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+}
+
+%geo-bold {
+	font-family: "Geometria-Bold", serif;
+	font-weight: 700;
+}
+
+%geo-extraBold {
+	font-family: "Geometria-ExtraBold", serif;
+	font-weight: 800;
+}
+
+%geo-extraBoldItalic {
+	font-family: "Geometria-ExtraBoldItalic", serif;
+	font-weight: 800;
+}
+
+%geo-heavy {
+	font-family: "Geometria-Heavy", serif;
+	font-weight: 900;
+}
+
+%geo-light {
+	font-family: "Geometria-Light", serif;
+	font-weight: 300;
+}
+
+%geo-medium {
+	font-family: "Geometria-Medium", serif;
+	font-weight: 500;
+}
+
+%geo-regular {
+	font-family: "Geometria-Regular", serif;
+	font-weight: 400;
+}

@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Blitz Estate</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link type="image/x-icon" rel="shortcut icon" href="images/favicon/favicon.ico">
+	<link type="image/png" sizes="16x16" rel="icon" href="images/favicon/favicon-16x16.png">
+	<link type="image/png" sizes="32x32" rel="icon" href="images/favicon/favicon-32x32.png">
+	<link type="image/png" sizes="96x96" rel="icon" href="images/favicon/favicon-96x96.png">
+	<link type="image/png" sizes="120x120" rel="icon" href="images/favicon/favicon-120x120.png">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<div class="header__top">
+					<button class="menu__btn">
+						<span class="menu__btn-line"></span>
+						меню
+					</button>
+					<nav class="menu">
+
+						<ul class="menu__list">
+							<li class="menu__list-item">
+								<a href="#test" class="menu__list-link">Подобрать объект</a>
+							</li>
+							<li class="menu__list-item">
+								<a href="#features" class="menu__list-link">Предоставляемые услуги</a>
+							</li>
+							<li class="menu__list-item">
+								<a href="#apartments" class="menu__list-link">Каталог апартаментов</a>
+							</li>
+							<li class="menu__list-item">
+								<a href="#about" class="menu__list-link">О нас</a>
+							</li>
+							<li class="menu__list-item">
+								<a href="#direction" class="menu__list-link">Направления работы</a>
+							</li>
+							<li class="menu__list-item">
+								<a href="#head" class="menu__list-link">Наша команда</a>
+							</li>
+						</ul>
+						<div class="contacts header-menu__contacts">
+							<a class="contacts__phone" href="tel:+74951991999">+7 (495) 199-19-99</a>
+							<button class="btn contacts__btn">Заказать звонок</button>
+						</div>
+					</nav>
+					<a class="logo header__logo" href="#">
+						<figure class="logo__fig">
+							<img class="logo__img" src="images/logo.svg" alt="logo">
+							<figcaption class="logo__figcap">Продажа недвижимости <br> в Москва-Сити</figcaption>
+						</figure>
+					</a>
+					<div class="contacts header-top__contacts">
+						<a class="contacts__phone" href="tel:+74951991999">+7 (495) 199-19-99</a>
+						<button class="btn contacts__btn">Заказать звонок</button>
+					</div>
+				</div>
+				<div class="header__content">
+					<h1 class="header__title">Агентство с международным именем Blitz Estate</h1>
+					<p class="header__suptitle">Поможем продать, купить и арендовать недвижимость в Москве, районе Сити
+						и области</p>
+					<ul class="header__list">
+						<li class="header__list-item">
+							<p class="header__list-num">17</p>
+							<p class="header__list-text">Работаем в 17 странах</p>
+						</li>
+						<li class="header__list-item">
+							<p class="header__list-num">1963</p>
+							<p class="header__list-text">Помогли 1963-м клиентам</p>
+						</li>
+						<li class="header__list-item">
+							<p class="header__list-num">10</p>
+							<p class="header__list-text">Лет на рынке недвижимости</p>
+						</li>
+					</ul>
+					<p class="header__text">
+						Пройди тест и получи в подарок бутылку шампанского <strong>Veuve Clicquot</strong>
+					</p>
+					<a class="btn header__content-btn" href="#">Подобрать недвижимость</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="main">
+		<section class="quiz section" id="test">
+			<div class="container">
+				<h3 class="quiz__title title"> Пройдитe тест из 5 вопросов</h3>
+				<p class="quiz__suptitle suptitle">Мы подберём 20 покупателей готовых купить вашу недвижимость в течение
+					24 часов</p>
+				<div class="quiz__inner">
+					<div class="quiz__slider">
+						<div class="quiz__slider-item">
+							<h6 class="quiz__slider-title">Выберите местоположение объекта</h6>
+							<form class="quiz__slider-form">
+								<div class="quiz__slider-content">
+									<input class="quiz__slider-input" type="radio" id="radio-1" name="radio">
+									<label class="quiz__slider-label" for="radio-1">
+										<img class="quiz__slider-img" src="images/test-box-1.jpg" alt="#">
+									</label>
+									<label class="quiz__slider-descr" for="radio-1">В России</label>
+								</div>
+								<div class="quiz__slider-content">
+									<input class="quiz__slider-input" type="radio" id="radio-2" name="radio">
+									<label class="quiz__slider-label" for="radio-2">
+										<img class="quiz__slider-img" src="images/test-box-2.jpg" alt="#">
+									</label>
+									<label class="quiz__slider-descr" for="radio-2">За границeй</label>
+								</div>
+							</form>
+							<p class="quiz__slider-text">Вы ответили на: 0/5 вопросов</p>
+						</div>
+						<div class="quiz__slider-item">
+							<h6 class="quiz__slider-title">Выберите местоположение объекта</h6>
+							<form class="quiz__slider-form">
+								<div class="quiz__slider-content">
+									<input class="quiz__slider-input" type="radio" id="radio-3" name="radio">
+									<label class="quiz__slider-label" for="radio-3">
+										<img class="quiz__slider-img" src="images/test-box-1.jpg" alt="#">
+									</label>
+									<label class="quiz__slider-descr" for="radio-3">В России</label>
+								</div>
+								<div class="quiz__slider-content">
+									<input class="quiz__slider-input" type="radio" id="radio-4" name="radio">
+									<label class="quiz__slider-label" for="radio-4">
+										<img class="quiz__slider-img" src="images/test-box-2.jpg" alt="#">
+									</label>
+									<label class="quiz__slider-descr" for="radio-4">За границeй</label>
+								</div>
+							</form>
+							<p class="quiz__slider-text">Вы ответили на: 1/5 вопросов</p>
+						</div>
+						<div class="quiz__slider-item">
+							<h6 class="quiz__slider-title">Выберите местоположение объекта</h6>
+							<form class="quiz__slider-form">
+								<div class="quiz__slider-content">
+									<input class="quiz__slider-input" type="radio" id="radio-5" name="radio">
+									<label class="quiz__slider-label" for="radio-5">
+										<img class="quiz__slider-img" src="images/test-box-1.jpg" alt="#">
+									</label>
+									<label class="quiz__slider-descr" for="radio-5">В России</label>
+								</div>
+								<div class="quiz__slider-content">
+									<input class="quiz__slider-input" type="radio" id="radio-6" name="radio">
+									<label class="quiz__slider-label" for="radio-6">
+										<img class="quiz__slider-img" src="images/test-box-2.jpg" alt="#">
+									</label>
+									<label class="quiz__slider-descr" for="radio-6">За границeй</label>
+								</div>
+							</form>
+							<p class="quiz__slider-text">Вы ответили на: 2/5 вопросов</p>
+						</div>
+						<div class="quiz__slider-item">
+							<h6 class="quiz__slider-title">Выберите местоположение объекта</h6>
+							<form class="quiz__slider-form">
+								<div class="quiz__slider-content">
+									<input class="quiz__slider-input" type="radio" id="radio-7" name="radio">
+									<label class="quiz__slider-label" for="radio-7">
+										<img class="quiz__slider-img" src="images/test-box-1.jpg" alt="#">
+									</label>
+									<label class="quiz__slider-descr" for="radio-7">В России</label>
+								</div>
+								<div class="quiz__slider-content">
+									<input class="quiz__slider-input" type="radio" id="radio-8" name="radio">
+									<label class="quiz__slider-label" for="radio-8">
+										<img class="quiz__slider-img" src="images/test-box-2.jpg" alt="#">
+									</label>
+									<label class="quiz__slider-descr" for="radio-8">За границeй</label>
+								</div>
+							</form>
+							<p class="quiz__slider-text">Вы ответили на: 3/5 вопросов</p>
+						</div>
+						<div class="quiz__slider-item">
+							<h6 class="quiz__slider-title">Выберите местоположение объекта</h6>
+							<form class="quiz__slider-form">
+								<div class="quiz__slider-content">
+									<input class="quiz__slider-input" type="radio" id="radio-9" name="radio">
+									<label class="quiz__slider-label" for="radio-9">
+										<img class="quiz__slider-img" src="images/test-box-1.jpg" alt="#">
+									</label>
+									<label class="quiz__slider-descr" for="radio-9">В России</label>
+								</div>
+								<div class="quiz__slider-content">
+									<input class="quiz__slider-input" type="radio" id="radio-10" name="radio">
+									<label class="quiz__slider-label" for="radio-10">
+										<img class="quiz__slider-img" src="images/test-box-2.jpg" alt="#">
+									</label>
+									<label class="quiz__slider-descr" for="radio-10">За границeй</label>
+								</div>
+							</form>
+							<p class="quiz__slider-text">Вы ответили на: 4/5 вопросов</p>
+						</div>
+					</div>
+					<ul class="quiz__list">
+						<li class="quiz__list-item">Поможем Вам приобрести, продать или арендовать необходимую
+							недвижимость
+						</li>
+						<li class="quiz__list-item">Продадим вашу недвижимость за 21 день или выкупим сами по стоимостьи
+							в договоре</li>
+						<li class="quiz__list-item">Забронируем понравившуюся квартиру и зафиксируем стоимость для вас
+							на момент бронирования</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="features section" id="features">
+			<div class="container">
+				<h3 class="features__title title">Наши услуги на международном рынке</h3>
+				<div class="features__items">
+					<div class="features__item features__item-1">
+						<img class="features__item-img" src="images/features-1.jpg" alt="#">
+						<div class="features__item-content">
+							<h6 class="features__item-title">Жилая недвижимость</h6>
+							<p class="features__item-text">Сопровождение сделок по продаже, купли и аренде объектов
+								недвижимости под ключ.</p>
+							<a class="features__item-btn btn  " href="#">Узнать больше</a>
+						</div>
+					</div>
+					<div class="features__item features__item-2">
+						<img class="features__item-img" src="images/features-2.jpg" alt="#">
+						<div class="features__item-content">
+							<h6 class="features__item-title">Доходная недвижимость</h6>
+							<p class="features__item-text">Сопровождение сделок по продаже, купли и аренде объектов
+								недвижимости под ключ.</p>
+							<a class="features__item-btn btn  " href="#">Узнать больше</a>
+						</div>
+					</div>
+					<div class="features__item features__item-3">
+						<img class="features__item-img" src="images/features-3.jpg" alt="#">
+						<div class="features__item-content">
+							<h6 class="features__item-title">Инвестиционные операции</h6>
+							<p class="features__item-text">Сопровождение сделок по продаже, купли и аренде объектов
+								недвижимости под ключ.</p>
+							<a class="features__item-btn btn  " href="#">Узнать больше</a>
+						</div>
+					</div>
+					<div class="features__item features__item-4">
+						<img class="features__item-img" src="images/features-4.jpg" alt="#">
+						<div class="features__item-content">
+							<h6 class="features__item-title">Покупка яхт</h6>
+							<p class="features__item-text">Сопровождение сделок по продаже, купли и аренде объектов
+								недвижимости под ключ.</p>
+							<a class="features__item-btn btn  " href="#">Узнать больше</a>
+						</div>
+					</div>
+					<div class="features__item features__item-5">
+						<img class="features__item-img" src="images/features-5.jpg" alt="#">
+						<div class="features__item-content">
+							<h6 class="features__item-title">Доверительное управление</h6>
+							<p class="features__item-text">Сопровождение сделок по продаже, купли и аренде объектов
+								недвижимости под ключ.</p>
+							<a class="features__item-btn btn  " href="#">Узнать больше</a>
+						</div>
+					</div>
+					<div class="features__item features__item-6">
+						<img class="features__item-img" src="images/features-6.jpg" alt="#">
+						<div class="features__item-content">
+							<h6 class="features__item-title">Консьерж сервис</h6>
+							<p class="features__item-text">Сопровождение сделок по продаже, купли и аренде объектов
+								недвижимости под ключ.</p>
+							<a class="features__item-btn btn  " href="#">Узнать больше</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="apart section" id="apartments">
+			<div class="container">
+				<h3 class="apart__title title">Выберите апартаменты в Москва-Сити</h3>
+				<p class="apart__suptitle suptitle">Мы включили в наш каталог все апартаменты доступные для покупки в
+					Москва-Сити</p>
+				<div class="apart__inner">
+					<div class="apart__buttons">
+						<button class="apart__btn" data-filter=".all">Показать все</button>
+						<button class="apart__btn" data-filter=".low-cost">От 20-30 млн</button>
+						<button class="apart__btn" data-filter=".middle-cost">От 30-50 млн</button>
+						<button class="apart__btn" data-filter=".high-cost">От 50-100 млн</button>
+						<button class="apart__btn" data-filter=".extra-high-cost">От 100 млн</button>
+					</div>
+					<div class="apart__items">
+						<div class="apart__item mix all low-cost">
+							<div class="apart__gallery">
+								<img class="apart__gallery-img" src="images/apart-1-1.jpg" alt="1">
+								<img class="apart__gallery-img" src="images/apart-1-2.jpg" alt="1">
+							</div>
+							<a class="apart__item-title" href="#">Апартаменты в «башне ОКО»
+							</a>
+							<div class="apart__box">
+								<div class="apart__box-lot">
+									Лот &#8470; 4536
+								</div>
+								<ul class="apart__info">
+									<li class="apart__info-total-price">26 000 000 &#8381;</li>
+									<li class="apart__info-squares">Площадь 70 м<sup>2</sup></li>
+									<li class="apart__info-price">365 714 &#8381; за м <sup>2</sup></li>
+									<li class="apart__info-state">Этаж 52</li>
+								</ul>
+							</div>
+							<a class="apart__item-link" href="#">Назначить просмотр</a>
+						</div>
+						<div class="apart__item mix all low-cost">
+							<div class="apart__gallery">
+								<img class="apart__gallery-img" src="images/apart-2-1.jpg" alt="1">
+								<img class="apart__gallery-img" src="images/apart-2-2.jpg" alt="1">
+							</div>
+							<a class="apart__item-title" href="#">Апартаменты в «башне Империя»
+							</a>
+							<div class="apart__box">
+								<div class="apart__box-lot">
+									Лот &#8470; 4547
+								</div>
+								<ul class="apart__info">
+									<li class="apart__info-total-price">27 900 000 &#8381;</li>
+									<li class="apart__info-squares">Площадь 62 м<sup>2</sup></li>
+									<li class="apart__info-price">365 420 &#8381; за м <sup>2</sup></li>
+									<li class="apart__info-state">Этаж 35</li>
+								</ul>
+							</div>
+							<a class="apart__item-link" href="#">Назначить просмотр</a>
+						</div>
+						<div class="apart__item mix all low-cost">
+							<div class="apart__gallery">
+								<img class="apart__gallery-img" src="images/apart-3-1.jpg" alt="1">
+								<img class="apart__gallery-img" src="images/apart-3-2.jpg" alt="1">
+							</div>
+							<a class="apart__item-title" href="#">Апартаменты в «Neva Towers»
+							</a>
+							<div class="apart__box">
+								<div class="apart__box-lot">
+									Лот &#8470; 4548
+								</div>
+								<ul class="apart__info">
+									<li class="apart__info-total-price">20 000 000 &#8381;</li>
+									<li class="apart__info-squares">Площадь 40 м<sup>2</sup></li>
+									<li class="apart__info-price">475 000 &#8381; за м <sup>2</sup></li>
+									<li class="apart__info-state">Этаж 16</li>
+								</ul>
+							</div>
+							<a class="apart__item-link" href="#">Назначить просмотр</a>
+						</div>
+						<div class="apart__item mix all low-cost">
+							<div class="apart__gallery">
+								<img class="apart__gallery-img" src="images/apart-4-1.jpg" alt="1">
+								<img class="apart__gallery-img" src="images/apart-4-2.jpg" alt="1">
+							</div>
+							<a class="apart__item-title" href="#">Апартаменты в «Город столиц»
+							</a>
+							<div class="apart__box">
+								<div class="apart__box-lot">
+									Лот &#8470; 4551
+								</div>
+								<ul class="apart__info">
+									<li class="apart__info-total-price">28 400 000 &#8381;</li>
+									<li class="apart__info-squares">Площадь 57 м<sup>2</sup></li>
+									<li class="apart__info-price">498 245 &#8381; за м <sup>2</sup></li>
+									<li class="apart__info-state">Этаж 48</li>
+								</ul>
+							</div>
+							<a class="apart__item-link" href="#">Назначить просмотр</a>
+						</div>
+						<div class="apart__item mix all middle-cost">
+							<div class="apart__gallery">
+								<img class="apart__gallery-img" src="images/apart-5-1.jpg" alt="1">
+								<img class="apart__gallery-img" src="images/apart-5-2.jpg" alt="1">
+							</div>
+							<a class="apart__item-title" href="#">Апартаменты в «башне ОКО»
+							</a>
+							<div class="apart__box">
+								<div class="apart__box-lot">
+									Лот &#8470; 4552
+								</div>
+								<ul class="apart__info">
+									<li class="apart__info-total-price">38 200 000 &#8381;</li>
+									<li class="apart__info-squares">Площадь 69 м<sup>2</sup></li>
+									<li class="apart__info-price">553 623 &#8381; за м <sup>2</sup></li>
+									<li class="apart__info-state">Этаж 58</li>
+								</ul>
+							</div>
+							<a class="apart__item-link" href="#">Назначить просмотр</a>
+						</div>
+						<div class="apart__item mix all middle-cost">
+							<div class="apart__gallery">
+								<img class="apart__gallery-img" src="images/apart-6-1.jpg" alt="1">
+								<img class="apart__gallery-img" src="images/apart-6-2.jpg" alt="1">
+							</div>
+							<a class="apart__item-title" href="#">Апартаменты в «башне Империя»
+							</a>
+							<div class="apart__box">
+								<div class="apart__box-lot">
+									Лот &#8470; 4553
+								</div>
+								<ul class="apart__info">
+									<li class="apart__info-total-price">41 000 000 &#8381;</li>
+									<li class="apart__info-squares">Площадь 74 м<sup>2</sup></li>
+									<li class="apart__info-price">554 054 &#8381; за м <sup>2</sup></li>
+									<li class="apart__info-state">Этаж 41</li>
+								</ul>
+							</div>
+							<a class="apart__item-link" href="#">Назначить просмотр</a>
+						</div>
+						<div class="apart__item mix all high-cost">
+							<div class="apart__gallery">
+								<img class="apart__gallery-img" src="images/apart-7-1.jpg" alt="1">
+								<img class="apart__gallery-img" src="images/apart-7-2.jpg" alt="1">
+							</div>
+							<a class="apart__item-title" href="#">Апартаменты в «Город столиц»
+							</a>
+							<div class="apart__box">
+								<div class="apart__box-lot">
+									Лот &#8470; 4554
+								</div>
+								<ul class="apart__info">
+									<li class="apart__info-total-price">53 200 000 &#8381;</li>
+									<li class="apart__info-squares">Площадь 94 м<sup>2</sup></li>
+									<li class="apart__info-price">565 957 &#8381; за м <sup>2</sup></li>
+									<li class="apart__info-state">Этаж 59</li>
+								</ul>
+							</div>
+							<a class="apart__item-link" href="#">Назначить просмотр</a>
+						</div>
+						<div class="apart__item mix all extra-high-cost">
+							<div class="apart__gallery">
+								<img class="apart__gallery-img" src="images/apart-5-1.jpg" alt="1">
+								<img class="apart__gallery-img" src="images/apart-5-2.jpg" alt="1">
+							</div>
+							<a class="apart__item-title" href="#">Апартаменты в «Neva Towers»</a>
+							<div class="apart__box">
+								<div class="apart__box-lot">
+									Лот &#8470; 4555
+								</div>
+								<ul class="apart__info">
+									<li class="apart__info-total-price">101 900 000 &#8381;</li>
+									<li class="apart__info-squares">Площадь 140 м<sup>2</sup></li>
+									<li class="apart__info-price">642 142 &#8381; за м <sup>2</sup></li>
+									<li class="apart__info-state">Этаж 61</li>
+								</ul>
+							</div>
+							<a class="apart__item-link" href="#">Назначить просмотр</a>
+						</div>
+					</div>
+					<div class="apart__inner-btn">Показать еще <svg class="apart__inner-btn-icon" width="13" height="8"
+							viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M12.8956 1.44781L6.44774 7.89562L5.7578 7.20567L12.2056 0.757867L12.8956 1.44781Z" />
+							<path
+								d="M0.689874 0.75786L7.13769 7.20567L6.44774 7.89562L-7.16437e-05 1.4478L0.689874 0.75786Z" />
+						</svg>
+					</div>
+					<div class="apart__items apart__items-extra">
+						<div class="apart__item mix all middle-cost">
+							<div class="apart__gallery-extra">
+								<img class="apart__gallery-img" src="images/apart-5-1.jpg" alt="1">
+								<img class="apart__gallery-img" src="images/apart-5-2.jpg" alt="2">
+							</div>
+							<a class="apart__item-title" href="#">Апартаменты в «башне ОКО»
+							</a>
+							<div class="apart__box">
+								<div class="apart__box-lot">
+									Лот &#8470; 4553
+								</div>
+								<ul class="apart__info">
+									<li class="apart__info-total-price">38 200 000 &#8381;</li>
+									<li class="apart__info-squares">Площадь 69 м<sup>2</sup></li>
+									<li class="apart__info-price">553 623 &#8381; за м <sup>2</sup></li>
+									<li class="apart__info-state">Этаж 58</li>
+								</ul>
+							</div>
+							<a class="apart__item-link" href="#">Назначить просмотр</a>
+						</div>
+						<div class="apart__item mix all middle-cost">
+							<div class="apart__gallery-extra">
+								<img class="apart__gallery-img" src="images/apart-6-1.jpg" alt="1">
+								<img class="apart__gallery-img" src="images/apart-6-2.jpg" alt="2">
+							</div>
+							<a class="apart__item-title" href="#">Апартаменты в «башне Империя»
+							</a>
+							<div class="apart__box">
+								<div class="apart__box-lot">
+									Лот &#8470; 4553
+								</div>
+								<ul class="apart__info">
+									<li class="apart__info-total-price">41 000 000 &#8381;</li>
+									<li class="apart__info-squares">Площадь 74 м<sup>2</sup></li>
+									<li class="apart__info-price">554 054 &#8381; за м <sup>2</sup></li>
+									<li class="apart__info-state">Этаж 41</li>
+								</ul>
+							</div>
+							<a class="apart__item-link" href="#">Назначить просмотр</a>
+						</div>
+						<div class="apart__item mix all high-cost">
+							<div class="apart__gallery-extra">
+								<img class="apart__gallery-img" src="images/apart-7-1.jpg" alt="1">
+								<img class="apart__gallery-img" src="images/apart-7-2.jpg" alt="2">
+							</div>
+							<a class="apart__item-title" href="#">Апартаменты в «Город столиц»
+							</a>
+							<div class="apart__box">
+								<div class="apart__box-lot">
+									Лот &#8470; 4554
+								</div>
+								<ul class="apart__info">
+									<li class="apart__info-total-price">53 200 000 &#8381;</li>
+									<li class="apart__info-squares">Площадь 94 м<sup>2</sup></li>
+									<li class="apart__info-price">565 957 &#8381; за м <sup>2</sup></li>
+									<li class="apart__info-state">Этаж 59</li>
+								</ul>
+							</div>
+							<a class="apart__item-link" href="#">Назначить просмотр</a>
+						</div>
+						<div class="apart__item mix all high-cost">
+							<div class="apart__gallery-extra">
+								<img class="apart__gallery-img" src="images/apart-3-1.jpg" alt="1">
+								<img class="apart__gallery-img" src="images/apart-3-2.jpg" alt="2">
+							</div>
+							<a class="apart__item-title" href="#">Апартаменты в «Neva Towers»
+							</a>
+							<div class="apart__box">
+								<div class="apart__box-lot">
+									Лот &#8470; 4555
+								</div>
+								<ul class="apart__info">
+									<li class="apart__info-total-price">89 900 000 &#8381;</li>
+									<li class="apart__info-squares">Площадь 140 м<sup>2</sup></li>
+									<li class="apart__info-price">642 142 &#8381;; за м <sup>2</sup></li>
+									<li class="apart__info-state">Этаж 61</li>
+								</ul>
+							</div>
+							<a class="apart__item-link" href="#">Назначить просмотр</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about section" id="about">
+			<div class="container">
+				<div class="about__inner">
+					<div class="about__content">
+						<h3 class="about__title title">Blitz Estate - на рынке недвижимости с 2008 года</h3>
+						<p class="about__text">
+							Blitz Estate – международная компания по управлению недвижимостью и финансами. Основана в
+							2008 г. в Австрии. На сегодня представлена в Англии, Испании, Латвии, ОАЭ, Австрии и
+							России,
+							кроме того имеет партнерскую сеть более чем в десяти странах мира.
+						</p>
+						<p class="about__text">
+							Мы предоставляем услуги полного цикла по приобретению и продаже недвижимости и управлению
+							активами, предоставляя клиентам неизменно высокое качество сервиса. Наш подход позволяет
+							оптимизировать инвестиционный портфель, диверсифицировать риски и обеспечить полную
+							конфиденциальность сделки.
+						</p>
+						<a class="about__content-btn btn  " href="">Узнать больше</a>
+					</div>
+					<div class="about__gallery">
+						<div class="about__gallery-slider">
+							<img class="about__gallery-img" src="images/about-1.jpg" alt="1">
+							<img class="about__gallery-img" src="images/about-2.jpg" alt="2">
+							<img class="about__gallery-img" src="images/about-3.jpg" alt="#3">
+							<img class="about__gallery-img" src="images/about-4.jpg" alt="#4">
+							<img class="about__gallery-img" src="images/about-5.jpg" alt="#5">
+						</div>
+						<div class="about__gallery-slider-nav">
+							<img class="about__gallery-nav" src="images/about-1.jpg" alt="1">
+							<img class="about__gallery-nav" src="images/about-2.jpg" alt="2">
+							<img class="about__gallery-nav" src="images/about-3.jpg" alt="#3">
+							<img class="about__gallery-nav" src="images/about-4.jpg" alt="#4">
+							<img class="about__gallery-nav" src="images/about-5.jpg" alt="#5">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="direction" id="direction">
+			<div class="container">
+				<h3 class="title direction__title">Направления нашего агентства</h3>
+				<div class="direction__items">
+					<div class="direction__item direction__item--1">
+						<h6 class="direction__item-title">Аренда жилой недвижимости</h6>
+						<div class="direction__info">
+							<p class="direction__info-prof">Руководитель:</p>
+							<p class="direction__info-name">Александр Смирнов</p>
+							<a class="direction__info-phone" href="tel:+74951991999">+7(495)199-19-99</a>
+							<a class="direction__info-email" href="mailto:moscow@blitz.estate">moscow@blitz.estate</a>
+						</div>
+					</div>
+					<div class="direction__item direction__item--2">
+						<h6 class="direction__item-title">Аренда коммерческой недвижимости</h6>
+						<div class="direction__info">
+							<p class="direction__info-prof">Руководитель:</p>
+							<p class="direction__info-name">Александр Смирнов</p>
+							<a class="direction__info-phone" href="tel:+74951991999">+7(495)199-19-99</a>
+							<a class="direction__info-email" href="mailto:moscow@blitz.estate">moscow@blitz.estate</a>
+						</div>
+					</div>
+					<div class="direction__item direction__item--3">
+						<h6 class="direction__item-title">Отдел блиц-сделок</h6>
+						<div class="direction__info">
+							<p class="direction__info-prof">Руководитель:</p>
+							<p class="direction__info-name">Александр Смирнов</p>
+							<a class="direction__info-phone" href="tel:+74951991999">+7(495)199-19-99</a>
+							<a class="direction__info-email" href="mailto:moscow@blitz.estate">moscow@blitz.estate</a>
+						</div>
+					</div>
+					<div class="direction__item direction__item--4">
+						<h6 class="direction__item-title">Продажа новостроек</h6>
+						<div class="direction__info">
+							<p class="direction__info-prof">Руководитель:</p>
+							<p class="direction__info-name">Александр Смирнов</p>
+							<a class="direction__info-phone" href="tel:+74951991999">+7(495)199-19-99</a>
+							<a class="direction__info-email" href="mailto:moscow@blitz.estate">moscow@blitz.estate</a>
+						</div>
+					</div>
+					<div class="direction__item direction__item--5">
+						<h6 class="direction__item-title">Продажа жилой недвижимости на вторичном рынке</h6>
+						<div class="direction__info">
+							<p class="direction__info-prof">Руководитель:</p>
+							<p class="direction__info-name">Александр Смирнов</p>
+							<a class="direction__info-phone" href="tel:+74951991999">+7(495)199-19-99</a>
+							<a class="direction__info-email" href="mailto:moscow@blitz.estate">moscow@blitz.estate</a>
+						</div>
+					</div>
+					<div class="direction__item direction__item--6">
+						<h6 class="direction__item-title">Продажа коммерческой недвижимости</h6>
+						<div class="direction__info">
+							<p class="direction__info-prof">Руководитель:</p>
+							<p class="direction__info-name">Александр Смирнов</p>
+							<a class="direction__info-phone" href="tel:+74951991999">+7(495)199-19-99</a>
+							<a class="direction__info-email" href="mailto:moscow@blitz.estate">moscow@blitz.estate</a>
+						</div>
+					</div>
+					<div class="direction__item direction__item--7">
+						<h6 class="direction__item-title">Инвестиционные проекты</h6>
+						<div class="direction__info">
+							<p class="direction__info-prof">Руководитель:</p>
+							<p class="direction__info-name">Александр Смирнов</p>
+							<a class="direction__info-phone" href="tel:+74951991999">+7(495)199-19-99</a>
+							<a class="direction__info-email" href="mailto:moscow@blitz.estate">moscow@blitz.estate</a>
+						</div>
+					</div>
+					<div class="direction__item direction__item--8">
+						<h6 class="direction__item-title">Недвижимость за рубежом</h6>
+						<div class="direction__info">
+							<p class="direction__info-prof">Руководитель:</p>
+							<p class="direction__info-name">Александр Смирнов</p>
+							<a class="direction__info-phone" href="tel:+74951991999">+7(495)199-19-99</a>
+							<a class="direction__info-email" href="mailto:moscow@blitz.estate">moscow@blitz.estate</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="team" id="team">
+			<div class="container">
+				<div class="team__inner">
+					<div class="team__content">
+						<div class="team__img-bg"></div>
+						<h3 class="team__title title">Руководитель агентства <br> Blitz Estate</h3>
+						<p class="team__name">Георгий Мебония</p>
+						<p class="team__text">Вице-президент по проектам в ММДЦ «Москва-Сити», Генеральный директор
+							компании Blitz Estate в России.</p>
+						<p class="team__text">Имея европейский опыт работы и показывая верность своему делу являемся
+							стратегическим партнером ММДЦ «Москва-Сити с 2013 года на эксклюзивной реализации объектов
+							приватных к продаже.</p>
+						<p class="team__text">Благодаря кропотливому и теплому отношению нам удается быстро и эффективно
+							оказывать нашим клиентам услуги высочайшего уровня в сфере недвижимости.</p>
+
+						<a class="team__content-btn btn " href="#">Задать вопрос</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__info">
+						<p class="footer__info-time">Время работы: <br>
+							Пн-Пт: 8:00-23:00, Сб-Вс: 9:00-21:00</p>
+						<address class="footer__info-adress">Пресненская набережная, дом 12 Башня "Федерация" Восток, 31
+							этаж, Офис Р</address>
+						<p class="footer__info-descr">ОГРН: 1187746683464&emsp; &emsp; ИНН: 7703462548</p>
+					</div>
+					<a class="logo footer-logo" href="#">
+						<figure class="logo__fig footer-logo__fig">
+							<img class="logo__img footer-logo__img" src="images/footer-logo.svg" alt="logo">
+							<figcaption class="logo__figcap footer-logo__figcap">Продажа недвижимости в Москва-Сити
+							</figcaption>
+						</figure>
+					</a>
+					<div class="contacts footer-contacts">
+						<a class="contacts__phone footer-contacts__phone" href="tel:+74951991999">+7 (495) 199-19-99</a>
+						<a class="contacts__email footer-contacts__email"
+							href="mailto:moscow@blitz.estate">moscow@blitz.estate</a>
+						<a class="btn contacts__btn footer-contacts__btn" href="#">Заказать звонок</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
