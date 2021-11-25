@@ -43,6 +43,7 @@
 
 	.quiz__list {
 		padding: 30px 30px 40px 30px;
+		grid-gap: 20px;
 
 	}
 
@@ -50,7 +51,23 @@
 		padding: 30px 30px 0 30px;
 	}
 
+
+
+	.quiz__list-item {
+		padding-left: 53px;
+	}
+
+	.quiz__slider-content+.quiz__slider-content {
+		margin-left: 15px;
+	}
+
+	.quiz__suptitle {
+		margin-bottom: 45px;
+	}
+
 	.direction__item {
+		padding: 25px 20px 20px 40px;
+
 		&::after {
 			height: 90px;
 			right: 20px;
@@ -97,26 +114,23 @@
 		width: 56px;
 
 	}
-}
 
-@media(max-width: 1000px) {
+	.direction__item-title {
+		font-size: 20px;
+		line-height: 25px;
+		margin-bottom: 45px;
+
+	}
+
+	.direction__items {
+		grid-gap: 20px;
+	}
+
 
 	.logo__figcap {
 		margin-left: 24px;
 		font-size: 14px;
 		line-height: 20px;
-	}
-
-	.quiz__list-item {
-		padding-left: 53px;
-	}
-
-	.quiz__list {
-		grid-gap: 20px;
-	}
-
-	.quiz__slider-content+.quiz__slider-content {
-		margin-left: 15px;
 	}
 
 	.title {
@@ -129,9 +143,7 @@
 		font-size: 18px;
 	}
 
-	.quiz__suptitle {
-		margin-bottom: 45px;
-	}
+
 
 	.apart__info-total-price {
 		font-size: 25px;
@@ -160,21 +172,7 @@
 		font-size: 14px;
 	}
 
-	.direction__item-title {
-		font-size: 20px;
-		line-height: 25px;
-		margin-bottom: 45px;
 
-	}
-
-	.direction__items {
-		grid-gap: 20px;
-	}
-
-	.direction__item {
-
-		padding: 25px 20px 20px 40px;
-	}
 
 	.team__inner {
 
@@ -271,6 +269,14 @@
 
 		grid-template-columns: repeat(4, 1fr);
 
+	}
+
+	.apart__info-total-price {
+		font-size: 22px;
+	}
+
+	.apart__info {
+		font-size: 14px;
 	}
 
 	.about__gallery {
@@ -433,16 +439,7 @@
 
 	}
 
-}
 
-@media(max-width: 800px) {
-	.apart__info-total-price {
-		font-size: 22px;
-	}
-
-	.apart__info {
-		font-size: 14px;
-	}
 
 	.team__inner {
 		background-size: 319px;
@@ -501,29 +498,28 @@
 		margin-left: 12px;
 	}
 
-	.header__list-num {
-		font-size: 40px;
-		line-height: 37px;
-	}
-
-	.header__list {
-
-		grid-gap: 20px;
-	}
-
 	.header__text {
 
 		margin-bottom: 32px;
 
 	}
 
-	.apart__buttons {
-		grid-template-columns: repeat(3, 1fr);
+	.header__list {
+		grid-gap: 20px;
+
+		grid-template-columns: auto;
+
 	}
 
-	.apart__gallery-img {
-		height: 188px;
+	.header__list-num {
+		font-size: 37px;
+		line-height: 32px;
 	}
+
+	.header__content-btn {
+		margin: 0 auto 40px 0;
+	}
+
 
 	.about__inner {
 		margin: 0;
@@ -539,11 +535,6 @@
 		width: 100%;
 		text-align: center;
 
-	}
-
-	.about__title {
-		text-align: center;
-		padding-bottom: 446px;
 	}
 
 	.about__text {
@@ -570,16 +561,47 @@
 	.about__content-btn {
 		margin-top: 20px;
 	}
-}
 
-@media(max-width: 700px) {
+
+	.about__gallery-nav {
+
+		height: 90px;
+	}
+
+	.about__gallery-slider-nav .slick-slide {
+		height: 90px;
+
+	}
+
+	.about__title {
+		text-align: center;
+		padding-bottom: 420px;
+	}
+
+	.apart__gallery-img {
+		height: 188px;
+	}
+
+	.apart__buttons {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.apart__items {
+		grid-template-columns: minmax(200px, 500px);
+		justify-content: center;
+	}
+
 	.apart__info {
-
-		grid-template-columns: auto;
+		grid-template-columns: auto auto;
 	}
 
 	.apart__box-lot {
 		margin-bottom: 6px;
+	}
+
+
+	.apart__info-state {
+		text-align: right;
 	}
 
 	.apart__info-total-price {
@@ -588,11 +610,7 @@
 
 	.apart__info-squares {
 		margin-bottom: 0;
-		text-align: left;
-	}
-
-	.apart__info-state {
-		text-align: left;
+		text-align: right;
 	}
 
 	.apart__item-title {
@@ -631,12 +649,6 @@
 		background-size: 261px;
 	}
 
-	.team__img-bg {
-		shape-outside: polygon(130px 259px, 93.93% 252px, 100.45% 119.28%, -3.14% 104.34%, 9.64% 75.09%, 24.14% 61.54%);
-		clip-path: polygon(136px 188px, 96.39% 168px, 100.45% 119.28%, -3.14% 104.34%, 9.64% 75.09%, 24.14% 61.54%);
-		max-width: 285px;
-	}
-
 	.footer__info-adress {
 		margin-bottom: 11px;
 		font-size: 14px;
@@ -657,9 +669,7 @@
 		font-size: 16px;
 		line-height: 26px;
 	}
-}
 
-@media(max-width:600px) {
 	.contacts__phone {
 		font-size: 16px;
 		line-height: 29px;
@@ -677,19 +687,6 @@
 		padding-left: 51px;
 	}
 
-	.header__list {
-		grid-template-columns: auto;
-
-	}
-
-	.header__list-num {
-		font-size: 37px;
-		line-height: 32px;
-	}
-
-	.header__content-btn {
-		margin: 0 auto 40px 0;
-	}
 
 	.quiz__slider-img {
 
@@ -709,38 +706,6 @@
 		padding: 20px;
 	}
 
-	.apart__items {
-		grid-template-columns: minmax(200px, 500px);
-		justify-content: center;
-	}
-
-	.apart__info-squares {
-		text-align: right;
-
-	}
-
-	.apart__info-state {
-		text-align: right;
-	}
-
-	.apart__info {
-		grid-template-columns: auto auto;
-	}
-
-	.about__gallery-nav {
-
-		height: 90px;
-	}
-
-	.about__gallery-slider-nav .slick-slide {
-		height: 90px;
-
-	}
-
-	.about__title {
-		text-align: center;
-		padding-bottom: 420px;
-	}
 
 	.team__inner {
 		background-size: 201px;
@@ -804,6 +769,23 @@
 		max-width: 302px;
 	}
 
+	.header__suptitle {
+
+		line-height: 23px;
+	}
+
+	.header__list {
+		grid-gap: 16px;
+
+	}
+
+	.header__text {
+		&::before {
+
+			top: 16px;
+		}
+	}
+
 	.menu__list {
 
 		margin-top: 94px;
@@ -843,9 +825,23 @@
 		line-height: 28px;
 	}
 
+	.quiz__slider-form {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.quiz__slider-content+.quiz__slider-content {
+		margin-left: 0;
+	}
+
+	.quiz__slider-descr {
+		margin: 10px 0;
+	}
+
+
 	.title {
-		font-size: 25px;
-		line-height: 33px;
+		font-size: 20px;
+		line-height: 29px;
 	}
 
 	.suptitle {
@@ -873,6 +869,8 @@
 
 	body {
 		font-size: 14px;
+		line-height: 24px;
+
 	}
 
 	.team__text {
@@ -891,60 +889,17 @@
 	}
 
 	.team__inner {
-
-		background-position: center 133px;
-		text-align: center;
-
+		background-position: center 119px;
 	}
 
 	.team__content {
 		padding: 40px 0;
 	}
-}
 
-@media(max-width: 400px) {
-	.header__suptitle {
-
-		line-height: 23px;
-	}
-
-	.header__list {
-		grid-gap: 16px;
-
-	}
-
-	body {
-		line-height: 24px;
-	}
-
-	.header__text {
-		&::before {
-
-			top: 16px;
-		}
-	}
 
 	.btn {
 
 		padding: 15px 33px;
-	}
-
-	.title {
-		font-size: 20px;
-		line-height: 29px;
-	}
-
-	.quiz__slider-form {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.quiz__slider-content+.quiz__slider-content {
-		margin-left: 0;
-	}
-
-	.quiz__slider-descr {
-		margin: 10px 0;
 	}
 
 	.apart__info {
@@ -987,10 +942,6 @@
 
 	.direction__item::after {
 		display: none;
-	}
-
-	.team__inner {
-		background-position: center 119px;
 	}
 
 }

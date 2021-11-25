@@ -125,6 +125,8 @@
 	}
 }
 
+
+
 .menu {
 	position: absolute;
 	@extend %O;
@@ -138,7 +140,6 @@
 	flex-direction: column;
 	justify-content: space-between;
 	height: 100vh;
-	min-height: 500px;
 
 	&__list {
 
@@ -146,6 +147,7 @@
 		padding: 10px 30px 0;
 		margin-top: 120px;
 		position: relative;
+
 
 		&::before {
 			position: fixed;
@@ -230,7 +232,7 @@
 		transition: all .1s linear;
 	}
 
-	&__btn.active {
+	&__btn.open {
 		color: transparent;
 
 		.menu__btn-line {
@@ -250,7 +252,7 @@
 	}
 }
 
-.menu.active {
+.menu.open {
 	transform: translateX(0);
 }
 
