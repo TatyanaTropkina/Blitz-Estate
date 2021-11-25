@@ -1,4 +1,4 @@
-# Online shop landing page 
+# Real estate agency landing page 
 
 This is a pet project using flexbox, grid and jquery.
 
